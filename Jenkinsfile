@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name: 'ServerName', choices: ["Server1"], description: 'Selecciona Servidor')
+        choice(name: 'ServerName', choices: ["server1"], description: 'Selecciona Servidor')
     }
     stages {
         stage('Ansible-Playbook Execution') {
