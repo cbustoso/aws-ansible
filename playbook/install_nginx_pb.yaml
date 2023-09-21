@@ -1,5 +1,5 @@
 ---
-- name: Ansible Demo
+- name: Instalar Nginx
   hosts: "{{ host_group }}"
   become: true
 
