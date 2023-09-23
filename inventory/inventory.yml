@@ -1,4 +1,3 @@
 webservers:
   hosts:
-    server1:
-      ansible_host: 3.88.208.227
+    ec2-3-88-208-227.compute-1.amazonaws.com
