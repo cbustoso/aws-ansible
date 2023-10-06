@@ -7,7 +7,7 @@ pipeline {
                     try {
                         // Copia los archivos de inventario y playbooks de aws-ansible a la instancia EC2
                         sshagent(credentials: ['705fa984-d6b9-408c-9acd-f1d0289bb09f']) {
-                            sh "scp -o StrictHostKeyChecking=no -r inventory playbook ubuntu@ec2-44-201-84-56.compute-1.amazonaws.com:/tmp/"
+                            sh "scp -o StrictHostKeyChecking=no -r inventory playbook ubuntu@eec2-44-201-84-56.compute-1.amazonaws.com:/tmp/"
                         }
                         
                         // Ejecuta el playbook de Ansible en la instancia EC2
